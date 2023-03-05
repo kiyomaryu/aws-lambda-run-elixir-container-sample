@@ -1,13 +1,10 @@
 #!/bin/bash
-
 # Usage
 # 環境変数を入れた状態でコンテナをビルドする方法
 # bash container-builder.sh $ENVIRONMENT
-
 ELIXIR_VERSION=1.14.0
 MODULE_NAME="LambdaElixirSample"
 CONTAINER_NAME="lambda-elixir-sample"
-
 rm -rf _build
 mkdir -p _build
 # elixirをlambdaで動かすためのbuilder
